@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freecodecamp Survey Form</h1>
+    <p id =description>Thank you for taking the time to help us improve the platform</p>
+    <form id ="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" placeholder="Age" min="10" max="50">
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option value="" selected>Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Job">Full Time Job</option>
+        <option vlaue="Learner">Full Time Learner</option>
+        <option vlaue="Others">Others</option>
+      </select>
+      <label>Would you recommend freecodecamp to a friend?</label>
+      <div>
+      <input type="radio" name="recommend" id="definitetly" value="Definitely" >
+      <label for="Definitely">Definitely</label>
+      <input type="radio" name="recommend" id="Maybe">
+      <label for="Maybe">Maybe</label>
+       <input type="radio" name="recommend" id="Not Sure">
+      <label for="Not Sure">Not Sure</label>
+      </div>
+      
+    </fieldset>
+    <fieldset></fieldset>
+    </form>
+  </body>
+</html>

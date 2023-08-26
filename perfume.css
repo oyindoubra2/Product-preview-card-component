@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 120%;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container-main {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card{
+    width: 350px;
+    height: 600px;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 10px 10px 10px 10px;
+}
+
+p{
+    font-family: Montserrat;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    color:  hsl(228, 12%, 48%);
+}
+img{
+    width: 100%;
+    height:250px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.perfume-text{
+    text-align: left;
+    max-width: 320px;
+    padding: 20px 10px 15px 20px;
+    
+}
+
+.price{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:  hsl(228, 12%, 48%);  
+}
+
+.bold{
+    font-family: Fraunces;
+    font-size: 28px;
+    margin-right: 20px;
+    color: hsl(158, 36%, 37%)
+}
+.line-through{
+    margin-top: 7px;
+    text-decoration: line-through;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 0px 15px 0;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: rgba(6, 58, 40, 0.8);
+}
+
+
+@media screen and (min-width:768px) {
+    .card{
+        display: flex;
+        width: 550px;
+        height: 400px;
+
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .head{
+        max-width: 200px;
+    }
+
+    .perfume-text{
+        max-width: 280px;
+        padding: 0 20px 20px 20px;
+    }
+    p {
+        margin: 15px 0 15px 0;
+    }
+
+    .price{
+        margin: 20px 0 20px 0;
+    }
+}
